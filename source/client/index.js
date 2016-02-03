@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-class HelloWorld extends React.Component {
-	render() {
-		return <h1>Hello World!</h1>;
-	}
-}
+import YTPlayer from './components/YTPlayer';
 
 ReactDOM.render(
-	<HelloWorld />,
+	<YTPlayer videoId="y6Sxv-sUYtM" duration={20} seekTo={60} />,
 	document.getElementById('root')
 );
